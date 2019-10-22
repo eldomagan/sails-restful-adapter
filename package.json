@@ -1,0 +1,43 @@
+{
+  "name": "sails-rest-adapter",
+  "version": "0.1.0",
+  "description": "A sails adapter for Sails / Waterline to use a rest api as data source",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/run-standard-tests",
+    "pretest": "npm run lint",
+    "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eldomagan/sails-rest-adapter.git"
+  },
+  "keywords": [
+    "sails-rest-adapter",
+    "adapter",
+    "sails",
+    "sails.js",
+    "waterline",
+    "orm",
+    "database-adapter"
+  ],
+  "author": "Eldo Magan <magan.eldo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "pluralize": "^8.0.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "waterline-adapter-tests": "^1.0.0-6"
+  },
+  "waterlineAdapter": {
+    "type": "sails-rest-adapter",
+    "interfaces": [
+      "semantic",
+      "queryable",
+      "associations"
+    ],
+    "features": []
+  }
+}
