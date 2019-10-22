@@ -1,5 +1,5 @@
 {
-  "name": "sails-rest-adapter",
+  "name": "sails-restful-adapter",
   "version": "0.1.0",
   "description": "A sails adapter for Sails / Waterline to use a rest api as data source",
   "main": "index.js",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/eldomagan/sails-rest-adapter.git"
+    "url": "git://github.com/eldomagan/sails-restful-adapter.git"
   },
   "keywords": [
-    "sails-rest-adapter",
+    "sails-restful-adapter",
     "adapter",
     "sails",
     "sails.js",
@@ -25,6 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "pluralize": "^8.0.0",
+    "request": "^2.88.0",
     "request-promise": "^4.2.4"
   },
   "devDependencies": {
@@ -32,7 +33,7 @@
     "waterline-adapter-tests": "^1.0.0-6"
   },
   "waterlineAdapter": {
-    "type": "sails-rest-adapter",
+    "type": "sails-restful-adapter",
     "interfaces": [
       "semantic",
       "queryable",
